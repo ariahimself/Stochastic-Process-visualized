@@ -193,11 +193,9 @@ plot_mean_reversion_demo(theta=0.5, mu=0, sigma=0.3, save_path='my_plot.png')
 - Jump-diffusion extensions
 
 **References:**
-- Uhlenbeck & Ornstein (1930), *On the Theory of Brownian Motion*
-- Gardiner, [*Stochastic Methods*](https://link.springer.com/book/10.1007/978-3-642-14394-6) (4th ed.), Springer
-- Pavliotis, [*Stochastic Processes and Applications*](https://link.springer.com/book/10.1007/978-1-4939-1323-7), Springer
-- Klebaner, [*Introduction to Stochastic Calculus with Applications*](https://link.springer.com/book/10.1007/978-1-84628-737-4), Springer
-- Shreve, *Stochastic Calculus for Finance II*
+- Øksendal, [*Stochastic Differential Equations An Introduction with Applications*](https://link.springer.com/book/10.1007/978-3-642-14394-6) (4th ed.), Springer
+- Jeanblanc , Yor , Chesney, [*Mathematical Methods for Financial Markets*](https://link.springer.com/book/10.1007/978-1-84628-737-4), Springer
+
 
 ## License
 
