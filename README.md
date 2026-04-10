@@ -112,9 +112,10 @@ The elliptical contours reveal the stationary covariance structure.
 ## Applications
 
 **Quantitative Finance**
-- Interest rate models (Vasicek)
-- Volatility modeling (mean-reverting vol)
-- Pairs trading signals
+- **Vasicek Model**: $dr_t = a(b - r_t)dt + \sigma dW_t$ — the OU process for interest rates
+- **Pairs Trading**: If spread $S_t$ between two assets is OU, you can compute optimal entry/exit thresholds
+- **Mean-Reverting Volatility**: Many vol models assume $\sigma_t$ follows OU dynamics
+- **Parameter Estimation**: Given time series data, estimate $\theta$, $\mu$, $\sigma$ via MLE or method of moments
 
 **Physics**
 - Brownian motion in a harmonic trap
@@ -182,24 +183,6 @@ from visualizations import (
 plot_mean_reversion_demo(theta=0.5, mu=0, sigma=0.3, save_path='my_plot.png')
 ```
 
-## Why OU for Quant Interviews?
-
-The OU process appears everywhere in quantitative finance:
-
-1. **Vasicek Model**: $dr_t = a(b - r_t)dt + \sigma dW_t$ — literally the OU process for interest rates
-
-2. **Pairs Trading**: If spread $S_t$ between two assets is OU, you can compute optimal entry/exit thresholds
-
-3. **Mean-Reverting Vol**: Many vol models assume $\sigma_t$ follows OU (or similar)
-
-4. **Parameter Estimation**: Given time series data, can you estimate $\theta$, $\mu$, $\sigma$?
-
-**Common interview questions:**
-- "Derive the expected value and variance of an OU process"
-- "What's the stationary distribution?"
-- "How would you estimate parameters from data?"
-- "Simulate the process and verify your analytical results"
-
 ## Extensions & Further Reading
 
 **Beyond this tutorial:**
@@ -211,7 +194,9 @@ The OU process appears everywhere in quantitative finance:
 
 **References:**
 - Uhlenbeck & Ornstein (1930), *On the Theory of Brownian Motion*
-- Gardiner, *Stochastic Methods* (4th ed.)
+- Gardiner, [*Stochastic Methods*](https://link.springer.com/book/10.1007/978-3-642-14394-6) (4th ed.), Springer
+- Pavliotis, [*Stochastic Processes and Applications*](https://link.springer.com/book/10.1007/978-1-4939-1323-7), Springer
+- Klebaner, [*Introduction to Stochastic Calculus with Applications*](https://link.springer.com/book/10.1007/978-1-84628-737-4), Springer
 - Shreve, *Stochastic Calculus for Finance II*
 
 ## License
