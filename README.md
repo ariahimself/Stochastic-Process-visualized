@@ -25,8 +25,8 @@ where:
 ## Quick Start
 
 ```bash
-git clone https://github.com/yourusername/ou-process-tutorial.git
-cd ou-process-tutorial
+git clone https://github.com/yourusername/stochastic-process-visualized.git
+cd stochastic-process-visualized
 pip install -r requirements.txt
 python run_demo.py
 ```
