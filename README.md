@@ -107,7 +107,7 @@ The elliptical contours reveal the stationary covariance structure.
 | Variance | $\text{Var}(X_t) = \frac{\sigma^2}{2\theta}(1 - e^{-2\theta t})$ | Grows then saturates |
 | Relaxation time | $\tau = 1/\theta$ | Time to decay by factor $e$ |
 | Stationary variance | $\sigma_\infty^2 = \sigma^2 / 2\theta$ | Long-term fluctuation scale |
-| Autocorrelation | $\rho(s) = e^{-\theta|s|}$ | Exponential decay |
+| Autocorrelation | $\rho(s) = e^{-\theta \lvert s \rvert}$ | Exponential decay |
 
 ## Applications
 
